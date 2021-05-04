@@ -922,6 +922,7 @@ class GAM(Core, MetaTermMixin):
         #     self._pirls(X, y, weights)
         # if self._opt == 1:
         #     self._pirls_naive(X, y)
+        self.n_features_in_ = X.shape[1]
         return self
 
     def score(self, X, y, weights=None):
